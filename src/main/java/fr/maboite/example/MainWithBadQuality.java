@@ -1,6 +1,11 @@
 package fr.maboite.example;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public class MainWithBadQuality {
+
+	private static final Logger LOGGER = LoggerFactory.getLogger(MainWithBadQuality.class);
 
 	private int startValue;
 
@@ -9,38 +14,34 @@ public class MainWithBadQuality {
 	}
 
 	public static void main(String[] args) {
+		LOGGER.info("Logger");
 		MainWithBadQuality badQuality = new MainWithBadQuality();
 		badQuality.setStartValue();
 		badQuality.compute();
-
 	}
 
-	public void compute() {
+	public int compute() {
 
 		for (int i = 0; i < 3; i++) {
 			int k = 3;
 			k *= i;
-			System.out.println(k);
+			LOGGER.info(":{}", k);
 		}
 
-		System.out.println(2 * startValue);
+		LOGGER.info(":{}", (2 * startValue));
 		for (int i = 0; i < 3; i++) {
 			int k = 3;
 			k *= i;
-			System.out.println(k);
+			LOGGER.info("Result of k: {}", k);
 		}
-		int j = 12;
+
 		String superString = "sds";
-		boolean maybe = true;
-		if (maybe) {
-			superString = null;
-            System.out.println(superString);
-        } else {
-            System.out.println(superString.toCharArray());
-        }
+		LOGGER.info("", superString.toCharArray());
 
-        if (this.startValue <= 0) {
+		if (this.startValue <= 0) {
+			return 0;
 		} else {
+			return this.startValue * 2;
 		}
 	}
 
