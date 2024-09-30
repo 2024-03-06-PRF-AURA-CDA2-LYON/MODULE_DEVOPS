@@ -14,7 +14,7 @@ public class MainWithBadQuality {
 	}
 
 	public static void main(String[] args) {
-		System.out.println("Démarrage du programme");
+		LOGGER.info("Démarrage du programme beuzingua!");
 		MainWithBadQuality badQuality = new MainWithBadQuality();
 		badQuality.setStartValue(12);
 		badQuality.compute();
@@ -25,22 +25,18 @@ public class MainWithBadQuality {
 		for (int i = 0; i < 3; i++) {
 			int k = 3;
 			k *= i;
-			System.out.println(k);
+			LOGGER.info(k);
 		}
 
-		System.out.println(2 * startValue);
+		LOGGER.info(2 * startValue);
 		for (int i = 0; i < 3; i++) {
 			int k = 3;
 			k *= i;
-			System.out.println(k);
+			LOGGER.info(k);
 		}
-		int j = 12;
+
 		String superString = "sds";
-		boolean maybe = true;
-		if (maybe) {
-			superString = null;
-		}
-		System.out.println(superString.toCharArray());
+		LOGGER.info(superString.toCharArray());
 
 		if (this.startValue <= 0) {
 			return 0;
