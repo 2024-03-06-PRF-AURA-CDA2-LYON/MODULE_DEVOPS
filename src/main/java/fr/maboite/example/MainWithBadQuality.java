@@ -15,6 +15,7 @@ public class MainWithBadQuality {
 
 	public static void main(String[] args) {
 		System.out.println("Démarrage du programme !");
+		System.out.println("devops !");
 		MainWithBadQuality badQuality = new MainWithBadQuality();
 		badQuality.setStartValue(12);
 		badQuality.compute();
