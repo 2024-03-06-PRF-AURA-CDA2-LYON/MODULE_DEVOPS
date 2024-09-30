@@ -4,18 +4,18 @@ public class MainWithBadQuality {
 
 	private int startValue;
 
-	private void setStartValue(int startValue) {
-		this.startValue = startValue;
+	private void setStartValue() {
+		this.startValue = 12;
 	}
 
 	public static void main(String[] args) {
 		MainWithBadQuality badQuality = new MainWithBadQuality();
-		badQuality.setStartValue(12);
+		badQuality.setStartValue();
 		badQuality.compute();
 
 	}
 
-	public int compute() {
+	public void compute() {
 
 		for (int i = 0; i < 3; i++) {
 			int k = 3;
@@ -34,13 +34,13 @@ public class MainWithBadQuality {
 		boolean maybe = true;
 		if (maybe) {
 			superString = null;
-		}
-		System.out.println(superString.toCharArray());
+            System.out.println(superString);
+        } else {
+            System.out.println(superString.toCharArray());
+        }
 
-		if (this.startValue <= 0) {
-			return 0;
+        if (this.startValue <= 0) {
 		} else {
-			return this.startValue * 2;
 		}
 	}
 
