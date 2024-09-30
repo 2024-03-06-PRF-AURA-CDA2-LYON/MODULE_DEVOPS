@@ -12,7 +12,6 @@
     <logger name="com.bigcorp" level="info" />
 
     <root level="info">
-    
         <appender-ref ref="FILE" />
     </root>
 
