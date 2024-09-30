@@ -14,7 +14,7 @@ public class MainWithBadQuality {
 	}
 
 	public static void main(String[] args) {
-		System.out.println("Démarrage du programme");
+		LOGGER.info("Démarrage du programme");
 		MainWithBadQuality badQuality = new MainWithBadQuality();
 		badQuality.setStartValue(12);
 		badQuality.compute();
@@ -25,14 +25,14 @@ public class MainWithBadQuality {
 		for (int i = 0; i < 3; i++) {
 			int k = 3;
 			k *= i;
-			System.out.println(k);
+			LOGGER.info("k : {} ",k);
 		}
 
-		System.out.println(2 * startValue);
+		LOGGER.info("Valeur doublé de startValue : {} ", 2 * startValue);
 		for (int i = 0; i < 3; i++) {
 			int k = 3;
 			k *= i;
-			System.out.println(k);
+			LOGGER.info("k : {} ",k);
 		}
 		int j = 12;
 		String superString = "sds";
@@ -48,5 +48,4 @@ public class MainWithBadQuality {
 			return this.startValue * 2;
 		}
 	}
-
 }
