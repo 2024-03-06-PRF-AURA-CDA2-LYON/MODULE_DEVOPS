@@ -18,7 +18,7 @@ public class MainWithBadQuality {
 		MainWithBadQuality badQuality = new MainWithBadQuality();
 		badQuality.setStartValue(12);
 		badQuality.compute();
-	}
+
 
 	public int compute() {
 
