@@ -16,7 +16,7 @@ public class MainWithBadQuality {
 	}
 
 	public int compute() {
-
+System.out.println("hello");
 		for (int i = 0; i < 3; i++) {
 			int k = 3;
 			k *= i;
