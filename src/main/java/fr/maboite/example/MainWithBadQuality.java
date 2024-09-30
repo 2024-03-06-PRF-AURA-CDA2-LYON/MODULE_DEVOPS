@@ -1,6 +1,11 @@
 package fr.maboite.example;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public class MainWithBadQuality {
+
+	private static final Logger LOGGER = LoggerFactory.getLogger(MainWithBadQuality.class);
 
 	private int startValue;
 
@@ -9,10 +14,10 @@ public class MainWithBadQuality {
 	}
 
 	public static void main(String[] args) {
+		System.out.println("Démarrage du programme");
 		MainWithBadQuality badQuality = new MainWithBadQuality();
 		badQuality.setStartValue(12);
 		badQuality.compute();
-
 	}
 
 	public int compute() {
