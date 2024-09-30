@@ -34,13 +34,10 @@ public class MainWithBadQuality {
 			k *= i;
 			LOGGER.info("Valeur de k : {} ",k);
 		}
-		int j = 12;
+
 		String superString = "sds";
-		boolean maybe = true;
-		if (maybe) {
-			superString = null;
-		}
-		System.out.println(superString.toCharArray());
+
+		LOGGER.info("superString : {}",superString);
 
 		if (this.startValue <= 0) {
 			return 0;
