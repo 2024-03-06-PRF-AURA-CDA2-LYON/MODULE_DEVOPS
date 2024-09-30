@@ -25,14 +25,14 @@ public class MainWithBadQuality {
 		for (int i = 0; i < 3; i++) {
 			int k = 3;
 			k *= i;
-			LOGGER.info("k : {} ",k);
+			LOGGER.info("Valeur de k : {} ",k);
 		}
 
 		LOGGER.info("Valeur doublé de startValue : {} ", 2 * startValue);
 		for (int i = 0; i < 3; i++) {
 			int k = 3;
 			k *= i;
-			LOGGER.info("k : {} ",k);
+			LOGGER.info("Valeur de k : {} ",k);
 		}
 		int j = 12;
 		String superString = "sds";
