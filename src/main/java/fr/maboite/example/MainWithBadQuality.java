@@ -9,6 +9,7 @@ public class MainWithBadQuality {
 	}
 
 	public static void main(String[] args) {
+		System.out.println("hello c'est karim");
 		MainWithBadQuality badQuality = new MainWithBadQuality();
 		badQuality.setStartValue(12);
 		badQuality.compute();
