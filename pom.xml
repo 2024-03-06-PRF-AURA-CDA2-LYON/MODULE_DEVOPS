@@ -5,7 +5,7 @@
 	<groupId>com.bigcorp</groupId>
 	<artifactId>prf-devops-2024-09</artifactId>
 	<packaging>jar</packaging>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>testNom-snapshot</version>
 	<name>devops-app</name>
 	<description>Application Java pour Devops</description>
 
