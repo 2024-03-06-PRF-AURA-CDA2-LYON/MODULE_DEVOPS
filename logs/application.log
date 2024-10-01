@@ -1,0 +1,9 @@
+571  [main] INFO  f.m.example.MainWithBadQuality - Démarrage du programme !
+573  [main] INFO  f.m.example.MainWithBadQuality - k:0
+574  [main] INFO  f.m.example.MainWithBadQuality - k:3
+574  [main] INFO  f.m.example.MainWithBadQuality - k:6
+574  [main] INFO  f.m.example.MainWithBadQuality - l:24
+574  [main] INFO  f.m.example.MainWithBadQuality - k:0
+574  [main] INFO  f.m.example.MainWithBadQuality - k:3
+574  [main] INFO  f.m.example.MainWithBadQuality - k:6
+575  [main] INFO  f.m.example.MainWithBadQuality - superString:[s, d, s]
